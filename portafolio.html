@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body onload="greeting()">
+    <div id="wrapper">
+        <header>
+            <p id="hello">
+                
+            </p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="personal.html">Personal</a></li>
+            </ul>
+        </header>
+        <div id="main-container">
+            <div id="main">
+                <div id="game1">
+                    <div id="rpsgame">
+                        <table>
+                            <tr><th colspan="2">Rock-Paper-Scissors Game</th></tr>
+                            <tr><td colspan="2">Choose an option from the select dropdwon and click on Play to see the results</td></tr>
+                            <tr>
+                                <td>User:
+                                    <select name="rpsoption" id="rpsoption">
+                                        <option value="Rock">Rock</option>
+                                        <option value="Paper">Paper</option>
+                                        <option value="Scissors">Scissors</option>
+                                    </select>
+                                </td>
+                                <td>Computer: 
+                                    
+                                </td>    
+                            </tr>
+                            <tr>
+                                <td class="game1img">
+                                    <img src="" alt="" id="userImg">
+                                </td>
+                                <td class="game1img">
+                                    <img src="" alt="" id="pcImg">
+                                </td>    
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="rpsButtonPlay">
+                                    <button id="rpsPlay" onclick="RspPlay()">Play</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="rpsAnswer">
+                                    
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div id="game2">
+                    <div>
+                        <table id="tictac">
+                            <tr><th colspan="3">Tic-Tac-Toc Game</th></tr>
+                            <tr><td colspan="3">Play with a mate! First player clicks on a cell, watch your turn. The first to make 3 cells in a row is the winner! </td></tr>
+                            <tr>
+                                <td><button id="button1" onclick="ticMark1()" class="cells"> </button></td>
+                                <td><button id="button2" onclick="ticMark2()" class="cells"> </button></td>
+                                <td><button id="button3" onclick="ticMark3()" class="cells"> </button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="button4" onclick="ticMark4()" class="cells"> </button></td>
+                                <td><button id="button5" onclick="ticMark5()" class="cells"> </button></td>
+                                <td><button id="button6" onclick="ticMark6()" class="cells"> </button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="button7" onclick="ticMark7()" class="cells"> </button></td>
+                                <td><button id="button8" onclick="ticMark8()" class="cells"> </button></td>
+                                <td><button id="button9" onclick="ticMark9()" class="cells"> </button></td>
+                            </tr>
+                            <tr><td colspan="3" id="controls">
+                                <div id="turn">
+
+                                </div>
+                                <br>
+                                <button id="ticNewGame" onclick="newGame()">New Game</button>
+                            </td></tr>
+
+                        </table>
+                    </div>
+                </div>
+               
+            </div> 
+            <div id="side">
+                <h2>Some Games in JavaScript!</h2>
+                <br>
+                <p>
+                    I will leave you with simple games that I have developed to show you a litle bit of my practices in JavaScript
+                </p>
+                <br>
+                <br>
+                <br>
+                <div id="socialNet">
+                    <h2>My social networks</h2>
+                    <br>
+                    <p>
+                        If you want to discover more you can click on my GitHub link. There you can find more about other practices I have done in the past
+                    </p>
+                    <a href="https://github.com/camiloko1989" target="_blank">
+                        <img src="./images/github.png" alt="github" width="100" height="100" id="gitimage">
+                    </a>
+                    <br>
+                    <br>
+                    <p>
+                        You can add me to LinkedIn if you want to grow your working social network!
+                    </p>
+                    <a href="https://www.linkedin.com/in/camilo-jimenez-garcia/" target="_blank">
+                        <img src="./images/linkedin.png" alt="github" width="100" height="100" id="gitimage">
+                    </a>
+                </div>
+                
+          </div>
+          
+        </div>
+    </div>
+   
+    <script src="./script.js"></script>
+  </body>
+</html>
