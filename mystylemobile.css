@@ -50,3 +50,11 @@ header ul li{
     height: 5em;
 }
 
+
+#countries{
+    display: block;
+}
+
+#countries td{
+    display: block;
+}
