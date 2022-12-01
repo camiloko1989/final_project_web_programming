@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" media="screen" href="mystyle.css">
+    <link rel='stylesheet' media='screen and (max-device-width: 1024px)' href='mystyletablet.css'>
+    <link rel='stylesheet' media='screen and (max-device-width: 768px)' href='mystylemobile.css'>
   </head>
   <body onload="greeting()">
     <div id="wrapper">
@@ -28,7 +30,7 @@
                             <tr><td colspan="2">Choose an option from the select dropdwon and click on Play to see the results</td></tr>
                             <tr>
                                 <td>User:
-                                    <select name="rpsoption" id="rpsoption">
+                                    <select name="rpsoption" id="rpsoption" onchange="userImage()">
                                         <option value="Rock">Rock</option>
                                         <option value="Paper">Paper</option>
                                         <option value="Scissors">Scissors</option>
@@ -40,7 +42,7 @@
                             </tr>
                             <tr>
                                 <td class="game1img">
-                                    <img src="" alt="" id="userImg">
+                                    <img src="./images/Rock.png" alt="" id="userImg">
                                 </td>
                                 <td class="game1img">
                                     <img src="" alt="" id="pcImg">

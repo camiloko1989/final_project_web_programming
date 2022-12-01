@@ -10,17 +10,17 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     background-color: black;
-    color: black;   
+    color: rgb(194, 185, 185);   
 }
 
 #wrapper{
     width: 80%;
     margin:auto;
     overflow: auto;
-    background-color: aqua;
-    background-image: url(./images/white_back.jpg);
+    background-image: url(./images/back_nite.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgb(109, 106, 106);
     padding-bottom: 1.2em;
 }
 
@@ -29,9 +29,9 @@ header{
     margin: auto;
     text-align: right;
     height: 10vh;
-    background-color: green;
-    background-image: url(./images/background2.jpg);
+    background-image: url(./images/bannerBlack.jpg);
     background-position: center;
+    background-color: rgb(109, 106, 106);
 
 }
 
@@ -44,7 +44,7 @@ header p{
     padding-top: .7em;
     font-size: 1.65em;
     font-weight: bold;
-    color: whitesmoke;
+    color: rgb(194, 185, 185);
 }
 
 ul{
@@ -61,7 +61,7 @@ header ul{
 header ul li{
     display: inline;
     padding: 0.5em;
-    border: 2px whitesmoke solid;  
+    border: 2px rgb(194, 185, 185) solid;  
     border-radius: 10%;
 }
 
@@ -70,7 +70,7 @@ header ul li a{
     text-decoration: none;
     font-size: 1.5em;
     padding: 0.5em;
-    color: whitesmoke;
+    color: rgb(194, 185, 185);
 }
 
 header ul li a:hover{
@@ -82,6 +82,7 @@ header ul li a:hover{
     display: block;
     width: 100%;
     margin: auto;
+    height: 100vh;
 }
 
 #main{
@@ -94,6 +95,7 @@ header ul li a:hover{
 
 #main h2{
     font-size: 2em;
+    padding-bottom: .5em;
 }
 
 #contactInfo{
@@ -136,6 +138,7 @@ header ul li a:hover{
 
 #educationInfo{
     margin-top: 1em;
+    padding-bottom: .5em;
 }
 
 .education{
@@ -144,6 +147,10 @@ header ul li a:hover{
 
 .education p{
     margin-top: .5em;
+}
+
+.education h4{
+    font-weight: bolder;
 }
 
 #side{
@@ -158,7 +165,7 @@ header ul li a:hover{
     border: 3px solid black;
     border-radius: 50%;
     width: 50%;
-    margin-left: 100px    ;
+    margin-left: 100px;
 }
 
 #side h3{
@@ -202,14 +209,15 @@ header ul li a:hover{
     background-color: #d1d1e0;
     border: 2px solid black;
     border-radius: 50px 20px;
+    color: #1d1d1c;
     
 }
 
 #SmokeTesting, #RegressionTesting, #TCManagement{
-    height:24px;
+    height: 1.5em;
     width:100%;
     padding: 1px;
-    background-color: greenyellow;
+    background-color: rgb(231, 8, 8);
     border: 2px solid black;
     border-radius: 50px 20px;
     padding-left: 5px;
@@ -219,7 +227,7 @@ header ul li a:hover{
     height:24px;
     width:50%;
     padding: 1px;
-    background-color: greenyellow;
+    background-color: rgb(231, 8, 8);
     border: 2px solid black;
     border-radius: 50px 20px;
     padding-left: 5px;
@@ -229,7 +237,7 @@ header ul li a:hover{
     height:24px;
     width:70%;
     padding: 1px;
-    background-color: #77b300;
+    background-color: #af1d77;
     border: 2px solid black;
     border-radius: 50px 20px;
     padding-left: 5px;
@@ -239,7 +247,7 @@ header ul li a:hover{
     height:24px;
     width:95%;
     padding: 1px;
-    background-color: #77b300;
+    background-color: #af1d77;
     border: 2px solid black;
     border-radius: 50px 20px;
     padding-left: 5px;
@@ -249,7 +257,7 @@ header ul li a:hover{
     height:24px;
     width:100%;
     padding: 1px;
-    background-color: #77b300;
+    background-color: #af1d77;
     border: 2px solid black;
     border-radius: 50px 20px;
     padding-left: 5px;
@@ -259,7 +267,7 @@ header ul li a:hover{
     height:24px;
     width:45%;
     padding: 1px;
-    background-color: #c4ff4d;
+    background-color: #f3593e;
     border: 2px solid black;
     border-radius: 50px 20px;
     padding-left: 5px;
@@ -269,7 +277,7 @@ header ul li a:hover{
     height:24px;
     width:35%;
     padding: 1px;
-    background-color: #c4ff4d;
+    background-color: #f3593e;
     border: 2px solid black;
     border-radius: 50px 20px;
     padding-left: 5px;
@@ -277,17 +285,18 @@ header ul li a:hover{
 
 
 th{
-    border: 1px black solid;
+    border: 3px black solid;
     padding: .8em;
     font-size: 1.3em;
     font-weight: bolder;
+    color: rgb(54, 53, 53);
 }
 
 tr td{ 
     color: black;
-    background-color: white;
     padding: .5em;
-    border: 1px black solid;
+    border: 3px black solid;
+    
 }
 
 table{
@@ -296,6 +305,7 @@ table{
     border-collapse: collapse;
     font-weight: bold;
     margin-top: 1.2em;
+    background-image: linear-gradient(rgb(219, 218, 218), rgb(158, 158, 154), rgb(157, 160, 157));
 }
 
 .game1img{
@@ -330,9 +340,6 @@ table{
 #tictac button{
     width: 8em;
     height: 8em;
-    margin-top: .3em;
-    padding-top: .3em;
-    padding-bottom: .3em;
     box-shadow: 0 5px 5px 0 grey, 0 5px 5px 0 grey;
     border-radius: 8px;
     font-weight: bold;
@@ -349,6 +356,10 @@ table{
     font-weight: bold;
 }
 
+#turn button{
+    padding: .2em;
+}
+
 #socialNet{
     display: block;
     text-align: center;
@@ -360,3 +371,68 @@ table{
     margin-top: 1.2em;
     background-color: white;
 }
+
+#countries{
+    width: 100%;
+    
+}
+
+#countries tr{
+    text-align: center;
+}
+
+
+
+.country{
+    width: 8em;
+    height: 6em;
+    box-shadow: 0 5px 5px 0 grey, 0 5px 5px 0 grey;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px black solid;
+    text-align: center;
+    margin-top: 3px;
+    
+}
+
+#sidePersonal{
+    text-align: center;
+    width: 40%;
+    float: left;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+    padding-right: 1.5em;
+}
+
+#sidePersonal h2{
+    padding-top: .5em;
+}
+
+#sidePersonal h3{
+    padding-top: .8em;
+    padding-bottom: 1em;
+}
+
+#sidePersonal img{
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#photo{
+    border-radius: 20%;
+}
+
+#readBlog{
+    text-align: center;
+    width: 8em;
+    height: 2em;
+    padding: 0.3em;
+    box-shadow: 0 5px 5px 0 grey, 0 5px 5px 0 grey;
+    border-radius: 8px;
+    border: 2px black solid;
+    background-color: rgba(245, 245, 220, 0.699);
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+

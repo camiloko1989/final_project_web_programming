@@ -1,0 +1,52 @@
+*{ box-sizing: border-box;}
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;   
+}
+
+header{
+    display: block;
+    text-align: center;
+    height: 25vh;
+}
+
+header p{
+    width: 100%;
+    text-align: center;
+    float: none;
+}
+
+header ul{
+    width: 100%;
+    float: none;
+    padding-right: 0;
+    
+}
+
+header ul li{
+    display: block;
+    padding: 0em;
+    border-radius: 0%;
+    border: 1px rgb(194, 185, 185) solid;
+}
+
+
+#myPicture {
+    margin-left: 0;
+}
+
+
+
+#tictac button{
+    width: 5em;
+    height: 5em;
+}
+

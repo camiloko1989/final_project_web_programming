@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" media="screen" href="mystyle.css">
+    <link rel='stylesheet' media='screen and (max-device-width: 1024px)' href='mystyletablet.css'>
+    <link rel='stylesheet' media='screen and (max-device-width: 768px)' href='mystylemobile.css'>
   </head>
   <body onload="greeting()">
     <div id="wrapper">
@@ -21,141 +23,98 @@
         </header>
         <div id="main-container">
             <div id="main">
-                <h2>Hernán Camilo Jiménez García</h2>
-                <div id="contactInfo">
-                    <span>Phone: (+1) 7783220439 </span>
-                    <span>email: camilojimenezg89@gmail.com </span><br>
-                    <span>Vancouver, British Columbia, Canada</span>
-                </div>
-                <div id="workExperience">
-                    <h3>Work Experience</h3>
-                    <div class="experience">
-                        <div class="exp-info">
-                            <img src="./images/yuxilogo.jpg" alt="yuxi global logo" width="50px" height="50px">
-                            <h4>Yuxi Global, Sep 2021 - Sep 2022</h4>
-                        </div>
-                        <p>
-                            Senior Quality Assurance Analyst <br>
-                            Project: Webapp for budgeting clinical studies for IQVIA 
-                            <ul>
-                                <li>Lead the QA team</li>
-                                <li>Management of test cases and test runs using TestRail</li>
-                                <li>Meetings with client to define acceptance criteria</li>
-                                <li>Manual testing over web application for health services</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="experience">
-                        <div class="exp-info">
-                            <img src="./images/overactivelogo.jpg" alt="Overactive logo" width="50px" height="50px">
-                            <h4>Overactive, Mar 2021 - Sep 2021</h4>
-                        </div>
-                        <p>
-                            Senior Quality Assurance Analyst<br>
-                            Project: IOS and Android banking system app for Banred Uruguay
-                            <ul>
-                                <li>Management of test cases and test runs using Zephyr</li>
-                                <li>Design and execution of test cases</li>
-                                <li>Manual testing over web application for health services</li>
-                                <li>Analysis of requirements</li>
-                                <li>Documentation of processes</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="experience">
-                        <div class="exp-info">
-                            <img src="./images/globant.jpg" alt="Globant logo" width="50px" height="50px">
-                            <h4>Globant Colombia, Apr 2019 - Aug 2020</h4>
-                        </div>
-                        <p>
-                            Semi Senior Quality Assurance Analyst<br>
-                            Project: Home webpage of HBO.com
-                            <ul>
-                                <li>Management of test cases and test runs using TestRail</li>
-                                <li>Design and execution of test cases</li>
-                                <li>Manual testing over AEM (Adobe Experience Manager)</li>
-                                <li>Documentation of processes</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="experience">
-                        <div class="exp-info">
-                            <img src="./images/codificologo.jpg" alt="codifico logo" width="50px" height="50px">
-                            <h4>Codifico SAS, Sept 2018 - Apr 2019</h4>
-                        </div>
-                        <p>
-                            Quality Assurance Analyst<br>
-                            Project: Webapp for managing legal processes for Relativity
-                            <ul>
-                                <li>Management of test cases and test runs using Zephyr</li>
-                                <li>Meetings with client to define acceptance criteria</li>
-                                <li>Design and execution of test cases</li>
-                                <li>Documentation of processes</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="experience">
-                        <div class="exp-info">
-                            <img src="./images/sophoslogo.jpg" alt="sophos logo" width="50px" height="50px">
-                            <h4>Sophos Solutions, Mar 2013 - Oct 2014</h4>
-                        </div>
-                        <p>
-                            Senior Quality Assurance Analyst<br>
-                            Project: Webpage for business banking
-                            <ul>
-                                <li>Management of test cases and test runs using Test Link</li>
-                                <li>Design and execution of test cases</li>
-                                <li>Documentation of processes</li>
-                            </ul>
-                        </p>
+                <h2>I really enjoy travelling</h2>
+                <div id="travelling">
+                    <p>
+                        I have been lucky and so far I have travelled to more than 15 countries around the world!
+                    </p>
+                    <div>
+                        <table id="countries">
+                            <tr><th colspan="4">Countries I've been to</th></tr>
+                            <tr><td colspan="4">Select the country for more information</td></tr>
+                            <tr>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/mexico.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/australia.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/japan.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/china.jpg" alt="" width="106" height="80" class="country"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/russia.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/germany.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/czechia.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/Hungary.jpg" alt="" width="106" height="80" class="country"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/austria.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/slovakia.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/italy.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/cuba.jpg" alt="" width="106" height="80" class="country"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/france.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/luxemburg.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/portugal.jpg" alt="" width="106" height="80" class="country"></td>
+                                <td><input type="radio" name="selectedcountry" onchange="countryInfo()" class="selectedcountry">
+                                    <br><img src="./images/canada.jpg" alt="" width="106" height="80" class="country"></td>
+                            </tr>
+                            <tr><td colspan="4" id="nameCountry"></td></tr>
+                            <tr><td colspan="4" id="infoCountry"></td></tr>
+                            
+
+                        </table>
                     </div>
                 </div>
-                <div>
-                    <h3>Education</h3>
-                    <div class="education">
-                        <h4>Francisco José de Caldas University, Bogotá, Colombia. Aug 2006 - Oct 2013</h4>
-                        <p>
-                            Bachelor degree of Systems Engineering   
-                        </p>
-                    </div>
-                    <div class="education">
-                        <h4>Universal Institute of Technology, Melbourne, Australia. Feb 2016 - Mar 2017</h4>
-                        <p>
-                            Diploma of Project Management
-                        </p>
-                    </div>
-                    <div class="education">
-                        <h4>Douglas College, Vancouver, Canada. Sep 2022 - Currently</h4>
-                        <p>
-                            Diploma of Information and Communication Technology
-                        </p>
-                    </div>
-                </div>
+                
+                
             </div> 
-            <div id="side">
-                <img src="./images/Foto_Camilo_Jimenez.jpg" alt="camilo_jimenez">
+            <div id="sidePersonal">
+                <h2>Other hobbies</h2>
+                <img id="photo" src="./images/camilo_camera.jpg" alt="camilo_jimenez">
                 <div>   
                     <div>
-                        <h3>About Me</h3>
+                        <h3>Photography</h3>
                         <p>
-                            I am an expert Quality Assurance Analyst with more than 4 years of experience in functional software testing. I have worked in different industries, from banking to entertainment, and with people from different backgrounds.
-                            I enjoy my job because I have the chance to interact with all the people in the project and have a broad vision of the overall software process.
-                            Besides my experience as a functional tester, I am improving both my skills in programming (JS, HTML, and CSS) and leadership to have a deeper insight into every team I work on. 
-                            Right now I am starting to learn about automation with Puppeteer and NodeJS.
+                            I bougth a cheap camera and I have been shooting, however, I have no professional training, I just try to take good angles
                         </p>
+                        <br>
+                        <br>
+                        <p>
+                            You can follow me and see some of my pics on Instagram
+                        </p>
+                        <a href="https://www.instagram.com/andaregueando_ando/" target="_blank"><img src="./images/instagram.png" alt="Instagram logo" width="250" ></a>
                     </div>
                     <div>
-                        <h3>Languages</h3>
-                        <ul>
-                            <li>English - C1 Certied with IELTS</li>
-                            <li>French - A2</li>
-                            <li>Spanish - Native</li>
-                        </ul>
+                        <h3>Writing</h3>
+                        <p>
+                            I wrote a book about a long-trip to France, I self published using Amazon KDP service, I haven't sold more than 10 copies but I fulfilled a dream. You can check it but is writen in Spanish!
+                        </p>
+                        <br>
+                        <a target="_blank" id="readBlog" href=https://www.amazon.com/Bit%C3%A1coras-viaje-en-cuarentena-Spanish/dp/B0B4K1BXRY >My Book :)</a>  
                     </div>
                     <div>
-                        <h3>Skills</h3>
-                        
-                        
+                        <br>
+                        <h3>Blogging</h3>
+                        <p>
+                            I have written at least 2 blogs, one of them with personal thoughts and another related to travelling. I leave a link to my travel blog, but, sorry is in Spanish!
+                        </p>
+                        <br>
+                        <a target="_blank" id="readBlog" href=https://andaregueandoando.com/; >Want to read?</a>    
                     </div>
                 </div>
           </div>
